@@ -7,5 +7,6 @@ export async function GET() {
   return NextResponse.json({
     time: time.toLocaleString(),
     timezone: time.getTimezoneOffset(),
+    utc: time.getUTCDate(),
   });
 }
